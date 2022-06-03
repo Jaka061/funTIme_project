@@ -2,7 +2,7 @@
     <string name="app_name">Fun Time</string>
     <string name="no_internet">No internet</string>
 
-    <string name="lastname">Email</string>
+    <string name="email">Email</string>
     <string name="name">Login</string>
     <string name="password">Password</string>
     <string name="authorization">Authorization</string>

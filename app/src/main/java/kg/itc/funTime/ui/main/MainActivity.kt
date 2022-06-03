@@ -10,7 +10,9 @@ import kg.itc.funTime.R
 import kg.itc.funTime.databinding.ActivityMainBinding
 import kg.itc.funTime.ui.OnClick
 import kg.itc.funTime.ui.funTime.company.CompanyFragment
+import kg.itc.funTime.ui.funTime.company.SearchingFragment
 import kg.itc.funTime.ui.funTime.company.TypesOfCompanyFragment
+import kg.itc.funTime.ui.funTime.users.UserInfoFragment
 
 @AndroidEntryPoint
 class MainActivity: AppCompatActivity(),OnClick {
@@ -34,14 +36,14 @@ class MainActivity: AppCompatActivity(),OnClick {
             clickView.setOnItemSelectedListener {
                 when (it.itemId) {
                     R.id.search -> {
-                        openFragment(TypesOfCompanyFragment(), false)
+                        openFragment(SearchingFragment(), false)
                     }
                     R.id.home -> {
                         Log.e("home","ok")
                         openFragment(TypesOfCompanyFragment(), false)
                     }
                     R.id.profile -> {
-                        openFragment(CompanyFragment(), false)
+                        openFragment(UserInfoFragment(), false)
                     }
                 }
                 true
