@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bkgr">
+    android:background="@drawable/back">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/mainTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="208dp"
         android:text="Welcome !"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -31,6 +31,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mainTxt"
         app:layout_constraintVertical_bias="0.812" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

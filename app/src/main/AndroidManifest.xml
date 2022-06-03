@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="kg.itc.examplemvvm">
+    package="kg.itc.funTime">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="false"
-        android:name=".App"
+        android:name="kg.itc.funTime.App"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ExampleMvvm" >
-
+        android:theme="@style/Theme.FunTime" >
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name="kg.itc.funTime.ui.main.MainActivity"
             android:launchMode="singleTask"
             android:exported="true">
             <intent-filter>

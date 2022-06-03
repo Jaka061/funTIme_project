@@ -4,25 +4,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginVertical="4dp"
-    android:layout_marginHorizontal="8dp"
-    app:cardCornerRadius="8dp">
+    android:layout_marginTop="120dp"
+    android:layout_marginVertical="15dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardCornerRadius="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
+        android:paddingVertical="5dp"
         android:background="@color/funTime"
         >
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/entertainment_type"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
             style="@style/recycleTextBig"
             android:text="Type"
+            android:paddingStart="15dp"
+            android:paddingVertical="5dp"
             app:layout_constraintBottom_toTopOf="@id/choice"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -30,11 +33,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Всего : "
+            android:paddingStart="15dp"
             style="@style/recycleText"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/entertainment_type"
-            app:layout_constraintVertical_chainStyle="spread" />
+            app:layout_constraintEnd_toStartOf="@id/count"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/count"
@@ -43,9 +47,7 @@
             android:text="0 "
             style="@style/recycleText"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/choice"
-            app:layout_constraintTop_toBottomOf="@id/description"
-            app:layout_constraintVertical_chainStyle="spread" />
+            app:layout_constraintStart_toEndOf="@id/choice"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

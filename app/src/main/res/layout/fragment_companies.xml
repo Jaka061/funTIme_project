@@ -11,5 +11,6 @@
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
+<!--   хотела добавить swiperefresh , но выходила ошибка с библиотекой-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

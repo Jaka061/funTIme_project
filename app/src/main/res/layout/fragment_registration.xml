@@ -3,32 +3,51 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingHorizontal="35dp"
+    android:background="@drawable/back">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txt"
+        style="@style/uiText"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:text="Registration"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintBottom_toTopOf="@+id/name_l"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_l"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/material"
+        app:startIconDrawable="@drawable/ic_user_info"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/email_l"
+        app:layout_constraintVertical_chainStyle="packed"
+        >
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="@string/name"
         android:inputType="text"
-        android:background="@drawable/btn"
-        app:layout_constraintBottom_toTopOf="@+id/email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt" />
+        android:background="@drawable/btn" />
 
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_l"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/material"
+        app:startIconDrawable="@drawable/ic_email"
+        app:layout_constraintTop_toBottomOf="@+id/name_l"
+        app:layout_constraintBottom_toTopOf="@id/password_l"
+        >
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/email"
         android:layout_width="match_parent"
@@ -36,24 +55,28 @@
         android:inputType="text"
         android:hint="@string/lastname"
         android:background="@drawable/btn"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/passwd"
         />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/passwd"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_l"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:inputType="textPassword"
-        android:background="@drawable/btn"
-        android:hint="@string/password"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btn"
-        />
+        style="@style/material"
+        app:startIconDrawable="@drawable/ic_password"
+        app:errorEnabled="true"
+        app:endIconMode="password_toggle"
+        app:layout_constraintTop_toBottomOf="@+id/email_l"
+        app:layout_constraintBottom_toTopOf="@id/btn"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn"
@@ -61,9 +84,10 @@
         android:layout_height="50dp"
         android:text="Sign up"
         android:background="@drawable/btn"
+        android:layout_marginTop="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwd" />
+        app:layout_constraintTop_toBottomOf="@+id/password_l" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
