@@ -14,7 +14,7 @@ class CompanyVH(private val binding : RecyclerCompanyBinding): RecyclerView.View
 
     fun bind(item: CompanyEntity) {
         with(binding){
-            // пока отображаю толко эти данные , позже доделаю recycle_company окончательно
+            // пока отображаю толко эти данные , позже доделаю recycle_company полноценно
             companyName.text = item.name
             region.text = item.region
             objectId = item.objectId

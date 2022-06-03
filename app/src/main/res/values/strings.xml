@@ -3,10 +3,11 @@
     <string name="no_internet">No internet</string>
 
     <string name="lastname">Email</string>
-    <string name="name">Name</string>
+    <string name="name">Login</string>
     <string name="password">Password</string>
     <string name="authorization">Authorization</string>
     <string name="sign_in">Sign in</string>
     <string name="regist">Sign up</string>
-    <string name="gender">gender (-M -F)</string>
+    <string name="age">Age</string>
+    <string name="sign_up">Sign up</string>
 </resources>

@@ -21,7 +21,6 @@ class CompanyVM @Inject constructor(
         init {
             getCompany()
         }
-
         fun getCompany(){
             _event.value = Event.ShowLoading
             disposable.add(

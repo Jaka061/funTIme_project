@@ -28,13 +28,13 @@
         android:hint="@string/name"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/recycler"
-        app:layout_constraintEnd_toStartOf="@id/btn"
+        app:layout_constraintEnd_toStartOf="@id/signUp"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn"
+        android:id="@+id/signUp"
         android:layout_width="100dp"
         android:layout_height="55dp"
         android:background="@drawable/btn"

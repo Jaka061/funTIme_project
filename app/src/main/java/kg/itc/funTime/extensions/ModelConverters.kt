@@ -1,15 +1,14 @@
 package kg.itc.funTime.extensions
 
 import kg.itc.funTime.data.models.*
+import kotlin.math.log
 
 fun UserDto.toUserEntity(): UserEntity {
     return UserEntity(
         objectId = this.objectId,
-        name = this.name,
+        login = this.login,
         email = this.email,
-        surname = this.surname,
         password = this.password,
-        age = this.age
     )
 }
 

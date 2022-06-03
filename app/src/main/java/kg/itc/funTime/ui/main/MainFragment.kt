@@ -13,6 +13,7 @@ import kg.itc.funTime.databinding.FragmentMainBinding
 import kg.itc.funTime.ui.OnClick
 import kg.itc.funTime.ui.base.BaseFragment
 import kg.itc.funTime.ui.funTime.company.TypesOfCompanyFragment
+import kg.itc.funTime.ui.funTime.users.login.AuthorizationFragment
 
 @AndroidEntryPoint
 class MainFragment: BaseFragment<MainVM, FragmentMainBinding>
@@ -43,7 +44,7 @@ class MainFragment: BaseFragment<MainVM, FragmentMainBinding>
 
         binding.apply {
             btnNext.setOnClickListener {
-                companyListener.openFragment(TypesOfCompanyFragment(),false)
+                companyListener.openFragment(AuthorizationFragment(),false)
                 Log.e("Main Type","open")
             }
         }
